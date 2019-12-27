@@ -1,0 +1,29 @@
+[{
+  "id": 1,
+  "appName": "account",
+  "appLabelName": "人员系统",
+  "appLoadUrl": "http://localhost:9001/",
+  "menuList": [{
+      "id": 1,
+      "labelName": "角色管理",
+      "url": "role"
+    },{
+      "id": 2,
+      "labelName": "员工管理",
+      "url": "staff"
+    }]
+}, {
+  "id": 2,
+  "appName": "salary",
+  "appLabelName": "薪酬系统",
+  "appLoadUrl": "http://localhost:9002/",
+  "menuList": [{
+      "id": 3,
+      "labelName": "薪酬配置",
+      "url": "config"
+    },{
+      "id": 4,
+      "labelName": "员工薪酬",
+      "url": "list"
+    }]
+}]
