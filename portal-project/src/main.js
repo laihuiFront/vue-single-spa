@@ -10,10 +10,12 @@ import './config/single-spa-config.js'
 Vue.config.productionTip = false
 Vue.use(Element, { size: 'small', zIndex: 3000 })
 
-window.store = store
+// window.store = store
 
 new Vue({
   router,
   store,
   render: h => h(App)
 }).$mount('#app')
+
+window.Publisher && window.Publisher.emit('account', {...store.getters.account})

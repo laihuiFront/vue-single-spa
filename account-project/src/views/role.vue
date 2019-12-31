@@ -1,21 +1,21 @@
 <template>
   <div class="home">
-    这是员工角色页面{{window.store.getters.name}}
+    这是员工角色页面-{{name}}
   </div>
 </template>
 
 <script>
-  import {mapGetters} from 'vuex'
+import {mapGetters} from 'vuex'
 export default {
   name: 'home',
   computed: {
-    // ...mapGetters(['name']),
+    ...mapGetters(['name']),
   },
-  data() {
-    return {
-      window
-    }
-  },
+  // data() {
+  //   return {
+  //     window
+  //   }
+  // },
   created() {
     setTimeout(() => {
       // this.store.commit('setName', '444lll')

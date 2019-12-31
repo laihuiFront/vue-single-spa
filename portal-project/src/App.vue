@@ -26,7 +26,7 @@
         <el-header class="portal-header">
           Header
           <input v-model="nameInput" style="border: 1px solid #ddd">
-          名称{{$store.getters.name}}----{{name}}
+          名称:{{name}}
         </el-header>
         <el-main class="portal-main">
           <div id="account-app-wrapper" class="account-app-wrapper">

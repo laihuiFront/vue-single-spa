@@ -5,15 +5,19 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    name: '11'
+    account: {
+      name: '123'
+    }
   },
   mutations: {
     setName(state, data) {
-      state.name = data
+      state.account.name = data
+      window.Publisher && window.Publisher.emit('account', {...state.account})
     }
   },
   getters: {
-    name: state => state.name
+    account: state => state.account,
+    name: state => state.account.name
   },
   actions: {
   },
